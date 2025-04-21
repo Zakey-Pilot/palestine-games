@@ -1,4 +1,6 @@
+import Link from "next/link"
 import SubscribeMail from "./SubscribeMail"
+
 export default function Hero(){
     return(
         <>
@@ -9,6 +11,9 @@ export default function Hero(){
                     COMING SOON
                 </p>
                 <SubscribeMail />
+                <Link href="https://thewareinside-tau.vercel.app">
+                    <p className="mt-4 underline decoration-sky-500 hover:text-sky-500">Explore our upcoming game</p>
+                </Link>
             </div>
         </>
     )
