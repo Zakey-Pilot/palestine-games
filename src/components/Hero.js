@@ -1,14 +1,23 @@
+"use client";
 import Link from "next/link"
 import SubscribeMail from "./SubscribeMail"
+import {useData} from "@/context/DataContext"
 
 export default function Hero(){
+
+    const { data } = useData();
+    console.log("Data is "+data)
+
+
     return(
         <>
             <div className="w-full h-dvh flex flex-col items-center justify-center">
                 <p 
                     className="text-center text-7xl font-bold mb-6"
                 >
-                    COMING SOON
+                  {
+                    data.pageTitle
+                  }  
                 </p>
                 <SubscribeMail />
                 <Link href="https://thewareinside-tau.vercel.app">
