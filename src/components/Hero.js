@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link"
-import SubscribeMail from "./SubscribeMail"
+import EmailForm from "./EmailForm"
 import {useData} from "@/context/DataContext"
 
 export default function Hero(){
@@ -19,7 +19,7 @@ export default function Hero(){
                     data.pageTitle
                   }  
                 </p>
-                <SubscribeMail />
+                <EmailForm />
                 <Link href="https://thewareinside-tau.vercel.app">
                     <p className="mt-4 underline decoration-sky-500 hover:text-sky-500">Explore our upcoming game</p>
                 </Link>
